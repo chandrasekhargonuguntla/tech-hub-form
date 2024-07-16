@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="textbased2.css">
+    <title>TechTrendLog</title>
+    <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 250vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar {
+   
+    height: 100px;
+    width: 100%;
+    background-color: rgb(221, 217, 217);
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    position: absolute;
+    top: 0;
+}
+
+.logo img {
+    height: 100px;
+    width: 280px;
+}
+
+.nav {
+    margin-left: 200px;
+    margin-right: 20px;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 70px;
+
+}
+
+.nav ul li {
+
+    position: relative;
+}
+
+.nav ul li a {
+    font-size: 30px;
+    text-decoration: none;
+    color:black;
+    font-size: 22px;
+}
+
+.nav ul li a:hover {
+    color: orangered;
+}
+
+.nav ul li a .fa-solid {
+    margin-left: 4px;
+    transition: transform 0.5s ease;
+}
+
+.nav ul li:hover > a .fa-solid {
+    transform: rotate(180deg);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    text-align: center;
+   
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+     width: 150px; 
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    margin-top: 10px;
+    border-bottom: rgb(247, 242, 242) 0.5px solid;
+    
+}
+
+.sub-menu li a {
+    color: black;
+    font-size: 16px;
+}
+
+.sub-menu li a:hover {
+    color: orangered;
+}
+
+.nav ul li input[type="text"] {
+    padding: 7px;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+}
+.cat{
+
+margin-top: 200px;
+width:500px;
+height:500px;
+background-color: aliceblue;
+margin-left: 400px;
+text-align: center;
+}
+form h1{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+ form input{
+    width: 350px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius:8px;
+    background: none;
+ }
+ form button{
+    width:350px;
+    height:35px;
+    background-color:rgb(113, 252, 113);
+    border: none;
+    color: white;
+    border-radius:15px;
+    font-size:25px;
+ }
+ form button:hover{
+    background-color: black;
+ }
+  form .g input{
+    height:18px ;
+    
+ }
+ form .g input p{
+    display: inline;
+ }
+
+.footer{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    border: black solid 1px;
+    margin-top: 150px;
+    padding-left: 50px;
+    display:flex;
+    column-gap: 250px;
+    padding-top: 50px;
+    color:black;
+}
+.footer li{
+    list-style: none;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.footer li a{
+    text-decoration: none;
+    color:black;
+    
+}
+.footer li a:hover{
+    color: orangered;
+} 
+    </style>
+
+</head>
+<body>
+    <div class="container">
+         <div class="navbar">
+            <div class="logo">
+                <img src="images/footer2.jpg" height="80px" width="280px">
+                  </div>
+                   <div class="nav">
+                  <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                   <li><a href="#">Trending <i class="fa-solid fa-angle-down"></i></a>
+                   <ul class="sub-menu">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Tutorials</a></li>
+
+                </ul>
+                </li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><input type=text name="search" placeholder= "     search"><i class="fa-solid fa-magnifying-glass" style="position: relative; padding:6px;"></i></li>
+                 </ul>
+            </div>
+        </div>
+    <div class="cat">
+    <form>
+        
+        <h1> Registration Form</h1>
+        
+        <input type="text" id="fname" name="fname" placeholder=" First Name"><br><br>
+        
+        <input type="text" id="lname" name="lname" placeholder="Least Name"><br><br>
+        
+       
+        <input type="text" id="lname" name="lname" placeholder="Email"><br><br>
+        
+        <input type="text" id="lname" name="lname" placeholder="Password "><br><br>
+        
+        <input type="text" id="lname" name="lname" placeholder="Phone"><br><br>
+
+        <button>Submit</button><br>
+
+        <div class="g">
+        <input  type="checkbox" checked="checkbox">
+         <p>By creating an account,I agree to this website's</p>
+    
+    </div>
+      </form>
+      </div>
+   
+
+         <div class="footer">
+            <div class="footer1">
+                <img src="images/footer2.jpg" height="70px" width="150px"> <br><br>
+                <p>We are here to help you.</p>
+            </div>
+            <div class="footer2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+ </div>
+            <div class="footer3">
+                <li><a href="#">Product Comparisions</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Community Forum</a></li>
+
+            </div>
+        </div>
+  
+    
+</body>
+</html>
